@@ -9,6 +9,79 @@
         tools:showIn="@layout/activity_main"
         tools:context=".MainActivity">
 
+    <Button
+            android:id="@+id/num7"
+            android:layout_width="49dp"
+            android:text="7"
+            style="@android:style/Widget.Button"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="34dp" android:layout_marginRight="34dp" android:layout_height="49dp"
+            app:layout_constraintBottom_toTopOf="@+id/num4" app:layout_constraintEnd_toStartOf="@+id/num8"/>
+    <Button
+            android:id="@+id/num4"
+            android:layout_width="49dp"
+            android:text="4"
+            style="@android:style/Widget.Button"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="34dp" android:layout_marginRight="34dp" android:layout_height="49dp"
+            app:layout_constraintBottom_toTopOf="@+id/num1" app:layout_constraintEnd_toStartOf="@+id/num5"/>
+    <Button
+            android:id="@+id/num8"
+            android:layout_width="49dp"
+            android:text="8"
+            style="@android:style/Widget.Button"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="34dp" android:layout_marginRight="34dp" android:layout_height="49dp"
+            app:layout_constraintBottom_toTopOf="@+id/num4" app:layout_constraintEnd_toStartOf="@+id/num3"/>
+    <Button
+            android:id="@+id/num6"
+            android:layout_width="49dp"
+            android:text="6"
+            style="@android:style/Widget.Button"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp" android:layout_height="49dp"
+            app:layout_constraintEnd_toStartOf="@+id/buttonMultiply" app:layout_constraintBottom_toTopOf="@+id/num3"/>
+    <Button
+            android:id="@+id/num1"
+            android:layout_width="49dp"
+            android:text="1"
+            style="@android:style/Widget.Button"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="34dp" android:layout_marginRight="34dp" android:layout_height="49dp"
+            app:layout_constraintBottom_toTopOf="@+id/buttonDot" app:layout_constraintEnd_toStartOf="@+id/num2"/>
+    <Button
+            android:id="@+id/num9"
+            android:layout_width="49dp"
+            android:text="9"
+            style="@android:style/Widget.Button"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp" android:layout_height="49dp"
+            app:layout_constraintEnd_toStartOf="@+id/buttonDivide" app:layout_constraintBottom_toTopOf="@+id/num5"/>
+    <Button
+            android:id="@+id/num5"
+            android:layout_width="49dp"
+            android:text="5"
+            style="@android:style/Widget.Button"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="34dp" android:layout_marginRight="34dp" android:layout_height="49dp"
+            app:layout_constraintBottom_toTopOf="@+id/num2" app:layout_constraintEnd_toStartOf="@+id/num6"/>
+    <Button
+            android:id="@+id/num2"
+            android:layout_width="49dp"
+            android:text="2"
+            style="@android:style/Widget.Button"
+            android:layout_marginEnd="34dp" android:layout_marginRight="34dp" android:layout_height="49dp"
+            app:layout_constraintEnd_toStartOf="@+id/num3" app:layout_constraintBottom_toTopOf="@+id/num0"
+            android:layout_marginBottom="8dp"/>
+    <Button
+            android:id="@+id/num3"
+            android:layout_width="49dp"
+            android:text="3"
+            style="@android:style/Widget.Button"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp" android:layout_height="49dp"
+            app:layout_constraintEnd_toStartOf="@+id/buttonSubtract"
+            app:layout_constraintBottom_toTopOf="@+id/buttonEqual"/>
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -78,11 +151,11 @@
             android:layout_width="49dp"
             android:text="."
             style="@style/Widget.AppCompat.Button.Colored"
-            app:layout_constraintEnd_toStartOf="@+id/buttonEqual"
-            android:layout_marginEnd="120dp"
-            android:layout_marginRight="120dp"
+            app:layout_constraintEnd_toStartOf="@+id/num0"
+            android:layout_marginEnd="36dp"
+            android:layout_marginRight="36dp"
             app:layout_constraintTop_toTopOf="@+id/buttonEqual"
-            />
+    />
 
     <Button
             android:id="@+id/buttonClear"
@@ -95,4 +168,13 @@
             app:layout_constraintTop_toTopOf="@+id/buttonDot"
             />
 
+    <Button
+            android:id="@+id/num0"
+            android:layout_width="49dp"
+            android:text="0"
+            style="@android:style/Widget.Button"
+            android:layout_marginBottom="80dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="34dp" android:layout_marginRight="34dp"
+            app:layout_constraintEnd_toStartOf="@+id/buttonEqual"/>
 </android.support.constraint.ConstraintLayout>
