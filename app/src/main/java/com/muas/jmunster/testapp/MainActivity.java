@@ -26,16 +26,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(), "Hallo daar?! Alles goed", 60000).show();
             }
-        });
+        });*/
 
-        *//*Button testButton = (Button) findViewById(R.id.testButton);
-        testButton.setOnClickListener(new View.OnClickListener() {
+        Button buttonEqual = (Button) findViewById(R.id.buttonEqual);
+        buttonEqual.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "Dit is geen snackbar!",Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
-        });*/
+        });
     }
 
     @Override
