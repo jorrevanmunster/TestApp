@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "Hallo daar?!", 60000).show();
+                Toast.makeText(getApplicationContext(), "Hallo daar?! Alles goed", 60000).show();
             }
         });
 
